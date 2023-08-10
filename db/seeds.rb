@@ -3,5 +3,17 @@
 #
 # Examples:
 #
+List.destroy_all
+Movie.destroy_all
+# require 'faker'
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+15.times do
+  Movie.create( title: Faker::Movie.title, overview: Faker::TvShows::BojackHorseman.quote )
+end
+
+list_names = ["Horror", "Action", "Featuring Alan", "Romance", "Comedy"]
+
+list_names.each do |name|
+  List.create( name: name)
+end
