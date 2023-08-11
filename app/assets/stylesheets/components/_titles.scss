@@ -1,0 +1,14 @@
+.banner {
+  background-color: white; /* Set your desired background color */
+  border-radius: 5px;
+  border-color: black;
+  color: rgb(0, 0, 0); /* Set text color */
+  padding: 20px; /* Add padding for spacing */
+  margin-bottom: 20px;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
